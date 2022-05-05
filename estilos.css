@@ -1,0 +1,62 @@
+.topo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0px;
+}
+.nav ul li{
+    padding: 8px;
+}
+a{
+    text-decoration: none;
+    color: #c11923;
+    transition: all .3s ease;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(imagens/novotempo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+a:hover{
+    border-bottom: 8px solid #c11923;
+       
+}
+.container{
+    text-align: center;
+}
+.fa-caret-down{
+    color: rgb(67 63 69);
+}
+h1{
+    font-size: 50px;
+    margin-top: 100px;
+    font-family: 'Handlee', cursive;
+    color: #fdfffd;
+}
+h2{
+    font-weight: lighter;
+    color: #fdfffd;
+}
+.content {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #3f3b465c;
+    color: #fdfffd;
+    padding: 15px;
+    border-radius: 20px;
+}
+.content ul{
+    list-style-type: none;
+}
+@media(max-width:768px){
+    .nav ul{display:block;} 
+    h1{font-size:36px;}
+    .content{width:90%;} 
+}
