@@ -22,6 +22,7 @@ body{
     background-image: url(imagens/novotempo.png);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
 }
 a:hover{
     border-bottom: 8px solid #c11923;
