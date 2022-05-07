@@ -17,6 +17,7 @@ a{
     color: #c11923;
     transition: all .3s ease;
 }
+/*ajustes na tela de fundo*/
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-image: url(imagens/novotempo.png);
@@ -30,9 +31,30 @@ a:hover{
 }
 .container{
     text-align: center;
+    
 }
-.fa-caret-down{
+#arrow{
+    font-size: 25px;
     color: rgb(67 63 69);
+    cursor: pointer;
+    animation: blink 1s steps(2, start) infinite;
+}
+/* visibilidade na seta, estilo de pisca pisca*/
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+/* animaçao da seta, alteração no cursor, alteração na rotação */
+#animation{
+    transition: 300ms;
+}
+.rotate{
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+.active{
+    display: block !important;
 }
 h1{
     font-size: 50px;
@@ -52,10 +74,12 @@ h2{
     color: #fdfffd;
     padding: 15px;
     border-radius: 20px;
+    display: none;
 }
 .content ul{
     list-style-type: none;
 }
+/* alteração no limite de tela*/
 @media(max-width:768px){
     .nav ul{display:block;} 
     h1{font-size:36px;}

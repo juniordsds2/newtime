@@ -39,12 +39,13 @@
                 <h1>Julio dos Santos</h1>
                 <h2>Novo tempo</h2>
             </div>
-            <div id="arrow">
-                <i class="fa-solid fa-caret-down fa-2x"></i>
+            <div onclick="displayabout()" id="arrow">
+                <i id="animation" class="fa-solid fa-caret-down fa-2x"></i>
             </div>
         </section>
     </main>
-    <div class="content">
+    <!-- class e id podem ter o mesmo nome -->
+    <div style="display: none;" id="content" class="content">
         <p>Acreditamos que todo dia é um novo dia, certo? <br>
             Então, penssando assim, que tal procurar-mos o nosso melhor da melhor forma possível? <br>
         </p>
@@ -56,6 +57,16 @@
             <li>Mudar</li>
         </ul>
     </div>
+    <!-- configuraçoes java script, para a personalização do botao e ativação do testo ao clicar -->
+    <script>
+        function displayabout() {
+            var arrow= document.getElementById('arrow');
+            arrow.classList.toggle('rotate');
+            var display= document.getElementById('content');
+            display.classList.toggle('active');
+            
+        }
+    </script>
 </body>
 
 </html>
